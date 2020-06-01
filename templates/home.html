@@ -1,12 +1,51 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>PlayStation 5 is coming</title>
-</head>
-<body>
+    <title>PS5 is Coming</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<h3>JUNE 4TH AT 09:00 PM (BST)</h3>
-<p id="demo"></p>
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  right: 100;
+  position: fixed;
+  max-width: 190%;
+  max-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+}
+</style>
+</head>
+<body bgcolor="black">
+
+<video poster="{{ url_for('static', filename='ps5sc.png') }}" autoplay muted id="myVideo">
+  <source src="{{ url_for('static', filename='ps5.webm') }}">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <p id="demo"></p>
+  <p>Watch at</p>
+  <a href="playstation.com/ps5">playstation.com/ps5</a>
+</div>
 
 <script src="{{ url_for('static', filename='script.js') }}"></script>
+
 </body>
 </html>
