@@ -14,8 +14,17 @@ body {
   font-size: 17px;
 }
 
-#myimg {
-    position: fixed;
+#myimg1 {
+
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myimg2 {
+
     display: block;
     width: 100%;
     height: auto;
@@ -36,7 +45,8 @@ body {
 </head>
 <body bgcolor="black">
 
-<img src="{{ url_for('static', filename='ps5sc2.png') }}" id="myimg">
+<img src="{{ url_for('static', filename='ps5sc2.png') }}" id="myimg1">
+<img src="{{ url_for('static', filename='ps5sc3.png') }}" id="myimg2">
 
 <div class="content">
   <p id="demo"></p>
