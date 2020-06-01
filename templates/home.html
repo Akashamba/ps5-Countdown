@@ -14,11 +14,8 @@ body {
   font-size: 17px;
 }
 
-#myVideo {
-  right: 100;
-  position: fixed;
-  max-width: 190%;
-  max-height: 100%;
+#myimg {
+position: fixed;
 }
 
 .content {
@@ -34,14 +31,12 @@ body {
 </head>
 <body bgcolor="black">
 
-<video poster="{{ url_for('static', filename='ps5sc.png') }}" autoplay muted id="myVideo">
-  <source src="{{ url_for('static', filename='ps5.webm') }}">
-  Your browser does not support HTML5 video.
-</video>
+<img src="{{ url_for('static', filename='ps5sc2.png') }}" id="myimg">
 
 <div class="content">
   <p id="demo"></p>
-  <p>Watch at </p><a href="https://www.playstation.com/en-in/ps5/" target="_blank">playstation.com/ps5</a>
+  <p>Watch at</p>
+  <a href="https://www.playstation.com/en-in/ps5/">playstation.com/ps5</a>
 </div>
 
 <script src="{{ url_for('static', filename='script.js') }}"></script>
