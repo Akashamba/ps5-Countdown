@@ -45,15 +45,15 @@ body {
 </head>
 <body bgcolor="black">
 
-<img src="{{ url_for('static', filename='ps5sc2.png') }}" id="myimg1">
-<img src="{{ url_for('static', filename='ps5sc3.png') }}" id="myimg2">
+<img src="ps5sc2.png" id="myimg1">
+<img src="ps5sc3.png" id="myimg2">
 
 <div class="content">
   <p id="demo"></p>
   <span>Watch at <a href="https://www.playstation.com/en-in/ps5/">playstation.com/ps5</a></span>
 </div>
 
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
