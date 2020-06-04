@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PS5 is Coming</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myimg1 {
+
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myimg2 {
+
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+}
+</style>
+</head>
+<body bgcolor="black">
+
+<img src="{{ url_for('static', filename='ps5sc2.png') }}" id="myimg1">
+<img src="{{ url_for('static', filename='ps5sc3.png') }}" id="myimg2">
+
+<div class="content">
+  <p id="demo"></p>
+  <span>Watch at <a href="https://www.playstation.com/en-in/ps5/">playstation.com/ps5</a></span>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
